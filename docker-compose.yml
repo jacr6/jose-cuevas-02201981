@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+ db:
+  image : mongo
+  container_name: mongodb
+  environment:
+   - PUID=1000
+   - PGID=1000
+  volumes:
+   - /home/jcuevas/mongodb/database:/data/db
+  ports:
+   - 27017:27017
+  restart: unless-stopped
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
