@@ -76,14 +76,14 @@ WSGI_APPLICATION = 'travelagency.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / 'db.sqlite3'),
-    },
-     'EveryMundo': {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': str(BASE_DIR / 'db.sqlite3'),
+    # },
+     'default': {
         'ENGINE': 'djongo',
         'NAME': 'EveryMundo',
-        'HOST': 'mongodb+srv://admin:admin@cluster0.5i3bc.mongodb.net/EveryMundo?retryWrites=true&w=majority',
+        'HOST': 'mongodb+srv://root:root@172.18.0.2/EveryMundo',
         'USER': 'admin',
         'PASSWORD': 'admin',
     }

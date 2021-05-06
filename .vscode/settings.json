@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "DJANGO",
+            "database": "${workspaceFolder:jose-cuevas-02201981}/Backend/travelagency/db.sqlite3"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
