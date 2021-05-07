@@ -9,7 +9,7 @@
 3.- If you have Portainer in your docker its more easy manage and test this containers (Read about deploy portainer on Docker)
 
 
-## Example for Database in MongoDB
+## Example of Database in MongoDB
 
 {
   "_id": {
@@ -30,6 +30,6 @@
 
 coverage run -m unittest countries
 
-## Example for run Test in Coverage
+## Example for run Test in Django
 
 python3 manage.py test
