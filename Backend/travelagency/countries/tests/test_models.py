@@ -26,10 +26,6 @@ class CountryModelTest(TestCase):
         # Set up non-modified objects used by all test methods
         Country.objects.create(name='POR', currency='EUR')
 
-    def test_name_label(self):
-        country = Country.objects.get(name="POR")
-        field_label = country._meta.get_field('name').verbose_name
-        self.assertEqual(field_label, "POR")
 
     def test_name_max_length(self):
         country = Country.objects.get(name="POR")
